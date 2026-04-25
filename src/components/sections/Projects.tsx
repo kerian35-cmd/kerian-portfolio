@@ -256,6 +256,15 @@ export default function Projects() {
                 <ChevronRight size={18} />
               </button>
             </div>
+
+            {canScrollRight && (
+              <div className="md:hidden flex items-center gap-2 text-accent">
+                <span className="font-mono text-[10px] uppercase tracking-[0.2em]">
+                  Swipe
+                </span>
+                <ChevronRight size={14} className="animate-nudge" />
+              </div>
+            )}
           </div>
 
           <div
@@ -309,20 +318,12 @@ export default function Projects() {
       {/* Detail overlay */}
       {current && (
         <div
-          className="fixed inset-0 z-[100] bg-bg-dark/96 backdrop-blur-xl overflow-y-auto"
+          className="fixed inset-0 z-[100] bg-bg-dark/96 backdrop-blur-xl overflow-y-auto overflow-x-hidden"
           onClick={() => setActive(null)}
           role="dialog"
           aria-modal="true"
           aria-label={`${current.title} — project details`}
         >
-          <button
-            onClick={() => setActive(null)}
-            aria-label="Close project details"
-            className="fixed top-6 right-6 z-10 w-11 h-11 flex items-center justify-center rounded-full border border-border-dark text-fg-light hover:border-accent hover:text-accent transition-colors bg-bg-dark/70 backdrop-blur"
-          >
-            <X size={18} />
-          </button>
-
           <div
             className="max-w-[960px] mx-auto px-6 py-20 md:py-28"
             onClick={(e) => e.stopPropagation()}
@@ -419,7 +420,7 @@ export default function Projects() {
                   Some of my work
                 </p>
                 <div
-                  className="relative"
+                  className="relative overflow-hidden"
                   style={{
                     maskImage:
                       "linear-gradient(to right, transparent, black 6%, black 94%, transparent)",
@@ -463,6 +464,16 @@ export default function Projects() {
             </div>
           </div>
         </div>
+      )}
+
+      {current && (
+        <button
+          onClick={() => setActive(null)}
+          aria-label="Close project details"
+          className="fixed top-6 right-6 z-[110] w-11 h-11 flex items-center justify-center rounded-full border border-border-dark text-fg-light hover:border-accent hover:text-accent transition-colors bg-bg-dark/70 backdrop-blur"
+        >
+          <X size={18} />
+        </button>
       )}
     </>
   );
