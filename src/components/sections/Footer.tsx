@@ -1,8 +1,11 @@
 "use client";
 
 import { ArrowUp, Mail, MessageCircle } from "lucide-react";
+import { useLang } from "@/lib/i18n";
+import { tx } from "@/lib/translations";
 
 export default function Footer() {
+  const { t } = useLang();
   return (
     <footer className="bg-bg-dark border-t border-border-dark py-10">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
@@ -39,13 +42,13 @@ export default function Footer() {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="flex items-center gap-2 text-fg-muted-dark hover:text-accent transition-colors text-xs uppercase tracking-wider font-mono"
         >
-          Back to top
+          {t(tx.footer.backToTop)}
           <ArrowUp size={14} strokeWidth={1.6} />
         </button>
       </div>
 
       <p className="max-w-[1280px] mx-auto px-6 md:px-12 mt-6 text-fg-muted-dark/70 text-[11px] font-mono uppercase tracking-widest text-center md:text-left">
-        Built with Next.js, Tailwind, GSAP &amp; AI.
+        {t(tx.footer.builtWith)}
       </p>
     </footer>
   );

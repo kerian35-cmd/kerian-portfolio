@@ -3,11 +3,14 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLang } from "@/lib/i18n";
+import { tx } from "@/lib/translations";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
   const sectionRef = useRef<HTMLElement>(null);
+  const { t } = useLang();
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -37,41 +40,28 @@ export default function About() {
         <div className="flex items-end justify-between mb-16 about-fade">
           <div>
             <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-accent mb-4">
-              01 — About
+              {t(tx.about.eyebrow)}
             </p>
             <h2 className="font-display font-black text-[clamp(48px,8vw,120px)] leading-[0.9] tracking-tight text-fg">
-              About me.
+              {t(tx.about.title)}
             </h2>
           </div>
         </div>
 
         <div className="about-fade max-w-3xl">
             <p className="text-lg md:text-xl leading-relaxed text-fg mb-6">
-              I&apos;m a Marketing Manager with 3 years of hands-on experience
-              driving growth for premium F&amp;B and hospitality brands in
-              Asia. Proven track record in revenue growth, brand elevation at
-              global level, and full-funnel digital marketing across paid
-              media, SEO, PR, social, events, and delivery platforms.
+              {t(tx.about.p1)}
             </p>
             <p className="text-lg md:text-xl leading-relaxed text-fg mb-6">
-              Based in Bangkok with full mobility across Asia. I work with
-              international brands, limited budgets, and high-performance
-              expectations — combining strategic thinking with operational
-              execution. Multilingual, Asia-focused, and results-driven.
+              {t(tx.about.p2)}
             </p>
             <p className="text-lg md:text-xl leading-relaxed text-fg-muted mb-10">
-              AI is a force multiplier in my workflow, not a replacement for
-              expertise. Three years of hands-on marketing strategy, brand
-              building, and growth execution stay in the driver&apos;s seat — I
-              use AI to compress production time, stress-test ideas, and ship
-              better work, faster. Every brief, decision, and narrative still
-              goes through human analysis and judgment. Human-in-the-loop,
-              always.
+              {t(tx.about.p3)}
             </p>
 
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pt-6 border-t border-border">
               <p className="font-display font-bold text-xl text-fg">
-                Designed by marketers, for marketers.
+                {t(tx.about.tagline)}
               </p>
               <a
                 href="/elements/resume_kerian.pdf"
@@ -80,7 +70,7 @@ export default function About() {
                 className="group inline-flex items-center gap-2 border border-fg text-fg px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-fg hover:text-bg-light transition-colors"
               >
                 <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                Download CV
+                {t(tx.about.cv)}
               </a>
             </div>
         </div>

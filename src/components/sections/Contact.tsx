@@ -4,6 +4,8 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Mail, MessageCircle } from "lucide-react";
+import { useLang } from "@/lib/i18n";
+import { tx } from "@/lib/translations";
 
 const LinkedInIcon = () => (
   <svg
@@ -47,6 +49,7 @@ const contacts = [
 
 export default function Contact() {
   const ref = useRef<HTMLElement>(null);
+  const { t } = useLang();
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -73,18 +76,17 @@ export default function Contact() {
     >
       <div className="max-w-[900px] mx-auto px-6 md:px-12 contact-content">
         <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-accent mb-6">
-          05 — Contact
+          {t(tx.contact.eyebrow)}
         </p>
         <h2 className="font-display font-black text-[clamp(48px,8vw,120px)] leading-[0.9] tracking-tight text-fg-light mb-8">
-          Let&apos;s build
+          {t(tx.contact.headlineLine1)}
           <br />
-          something{" "}
-          <span className="text-accent">remarkable.</span>
+          {t(tx.contact.headlineLine2)}{" "}
+          <span className="text-accent">{t(tx.contact.headlineLine3)}</span>
         </h2>
 
         <p className="text-fg-muted-dark text-lg md:text-xl max-w-md mx-auto mb-14">
-          Currently open to full-time roles, contracts, and mission-based work
-          across Asia and remotely.
+          {t(tx.contact.sub)}
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-16">
@@ -112,7 +114,7 @@ export default function Contact() {
           className="inline-flex items-center gap-3 bg-accent text-bg-dark px-8 py-4 rounded-full font-semibold hover:bg-accent-2 transition-colors"
         >
           <span className="w-2 h-2 rounded-full bg-bg-dark" />
-          Send an email
+          {t(tx.contact.sendEmail)}
         </a>
       </div>
     </section>

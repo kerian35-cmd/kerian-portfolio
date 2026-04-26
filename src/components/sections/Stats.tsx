@@ -1,25 +1,18 @@
 "use client";
 
-const stats = [
-  { value: "+40%", label: "Revenue Growth — Massilia (3Y)" },
-  { value: "+60%", label: "Delivery Growth — La Bottega" },
-  { value: "+45%", label: "Social Following — La Bottega" },
-  { value: "+30%", label: "Delivery Platforms Growth" },
-  { value: "#22", label: "Worldwide — 50 Top Pizza" },
-  { value: "#4", label: "APAC — 50 Top Pizza" },
-  { value: "30+", label: "Events & Collaborations" },
-  { value: "10+", label: "Catering Events / 6 months" },
-  { value: "4", label: "Languages Spoken" },
-  { value: "3+", label: "Years Experience" },
-];
+import { useLang } from "@/lib/i18n";
+import { tx } from "@/lib/translations";
 
 export default function Stats() {
+  const { t } = useLang();
+  const stats = tx.stats.items.map((s) => ({ value: s.value, label: t(s.label) }));
+
   return (
     <section className="bg-bg-light py-20 md:py-28 border-y border-border overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 mb-10 flex items-center gap-4">
         <span className="w-2 h-2 rounded-full bg-accent" />
         <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-fg-muted">
-          Numbers that matter
+          {t(tx.stats.label)}
         </p>
       </div>
 

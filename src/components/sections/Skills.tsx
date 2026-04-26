@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
@@ -11,80 +11,27 @@ import {
   Globe2,
   Target,
 } from "lucide-react";
+import { useLang } from "@/lib/i18n";
+import { tx } from "@/lib/translations";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const groups = [
-  {
-    icon: TrendingUp,
-    title: "Growth & Performance",
-    skills: [
-      "Growth Marketing",
-      "SEO / SEM Strategy",
-      "Google Ads & Meta Ads (PPC)",
-      "Campaign Planning & Optimization",
-      "Customer Acquisition & Retention",
-    ],
-  },
-  {
-    icon: Sparkles,
-    title: "AI & Automation",
-    skills: [
-      "AI Generative Video",
-      "AI Generative Image",
-      "AI Content Pipelines",
-      "Workflow Automation",
-      "Prompt Engineering",
-    ],
-  },
-  {
-    icon: Megaphone,
-    title: "Brand & PR",
-    skills: [
-      "Brand Strategy & Positioning",
-      "Media Relations & Press",
-      "Go-to-Market Strategy",
-      "KOL / Influencer Campaigns",
-      "Event Marketing & Activations",
-    ],
-  },
-  {
-    icon: Camera,
-    title: "Content & Social",
-    skills: [
-      "Content Strategy & Production",
-      "Food Photography",
-      "Video Production & Editing",
-      "Instagram, TikTok, LINE",
-      "Social Community Management",
-    ],
-  },
-  {
-    icon: Globe2,
-    title: "Web & Platforms",
-    skills: [
-      "Wix & WordPress",
-      "Website Optimization",
-      "Delivery Platform Ops",
-      "GrabFood, ShopeeFood, Lineman",
-      "Analytics & Reporting",
-    ],
-  },
-  {
-    icon: Target,
-    title: "F&B Expertise",
-    skills: [
-      "Restaurant Marketing",
-      "Catering & Events Development",
-      "Multi-location Operations",
-      "Asia Market Expansion",
-    ],
-  },
-];
+const ICONS = [TrendingUp, Sparkles, Megaphone, Camera, Globe2, Target];
 
 export default function Skills() {
   const sectionRef = useRef<HTMLElement>(null);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const { t } = useLang();
+
+  const groups = useMemo(
+    () =>
+      tx.skills.groups.map((g, i) => ({
+        icon: ICONS[i] ?? TrendingUp,
+        title: t(g.title),
+        skills: g.skills.map((s) => t(s)),
+      })),
+    [t]
+  );
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -114,10 +61,10 @@ export default function Skills() {
         <div className="flex items-end justify-between mb-16">
           <div>
             <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-accent mb-4">
-              03 — Capabilities
+              {t(tx.skills.eyebrow)}
             </p>
             <h2 className="font-display font-black text-[clamp(48px,8vw,120px)] leading-[0.9] tracking-tight text-fg">
-              What I do.
+              {t(tx.skills.title)}
             </h2>
           </div>
         </div>

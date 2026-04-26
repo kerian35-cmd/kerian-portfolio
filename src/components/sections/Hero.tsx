@@ -2,9 +2,12 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { useLang } from "@/lib/i18n";
+import { tx } from "@/lib/translations";
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
+  const { t } = useLang();
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -47,10 +50,10 @@ export default function Hero() {
   };
 
   const meta = [
-    { label: "Location", value: "Bangkok, Asia" },
-    { label: "Experience", value: "3+ Years" },
-    { label: "Focus", value: "F&B & Hospitality" },
-    { label: "Status", value: "Open to work" },
+    { label: t(tx.hero.metaLocation), value: t(tx.hero.metaLocationValue) },
+    { label: t(tx.hero.metaExperience), value: t(tx.hero.metaExperienceValue) },
+    { label: t(tx.hero.metaFocus), value: t(tx.hero.metaFocusValue) },
+    { label: t(tx.hero.metaStatus), value: t(tx.hero.metaStatusValue) },
   ];
 
   return (
@@ -79,21 +82,19 @@ export default function Hero() {
       <div className="relative z-10 flex-1 flex flex-col max-w-[1280px] w-full mx-auto px-6 md:px-12 pt-28 md:pt-32 pb-12">
         <div className="flex-1 flex flex-col justify-center max-w-4xl">
           <p className="hero-eyebrow font-mono text-xs uppercase tracking-[0.22em] text-accent mb-6">
-            Marketing Specialist &amp; AI Strategist
+            {t(tx.hero.eyebrow)}
           </p>
 
           <h1 className="hero-headline font-display font-black text-[clamp(40px,6.5vw,96px)] leading-[0.95] tracking-tight text-fg-light mb-8">
-            Marketing
+            {t(tx.hero.headlineLine1)}
             <br />
-            that scales.
+            {t(tx.hero.headlineLine2)}
             <br />
-            <span className="text-accent">Powered by AI.</span>
+            <span className="text-accent">{t(tx.hero.headlineLine3)}</span>
           </h1>
 
           <p className="hero-sub text-fg-muted-dark text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
-            3 years driving growth for premium F&amp;B brands across Asia. From
-            +40% sustained revenue growth to global top-25 rankings — I combine
-            strategic marketing with AI-native execution.
+            {t(tx.hero.sub)}
           </p>
 
           <button
@@ -101,7 +102,7 @@ export default function Hero() {
             className="hero-cta self-start inline-flex items-center gap-3 bg-accent text-bg-dark px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-accent-2 transition-colors"
           >
             <span className="w-2 h-2 rounded-full bg-bg-dark" />
-            Get in touch
+            {t(tx.hero.cta)}
           </button>
         </div>
 

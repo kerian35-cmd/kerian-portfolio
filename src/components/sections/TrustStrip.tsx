@@ -1,5 +1,8 @@
 "use client";
 
+import { useLang } from "@/lib/i18n";
+import { tx } from "@/lib/translations";
+
 const clients = [
   "Massilia",
   "La Bottega",
@@ -11,12 +14,13 @@ const clients = [
 ];
 
 export default function TrustStrip() {
+  const { t } = useLang();
   return (
     <div className="bg-bg-light border-y border-border py-10 overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 mb-6 flex items-center gap-4">
         <span className="w-2 h-2 rounded-full bg-accent" />
         <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-fg-muted">
-          Kérian has worked with
+          {t(tx.trust.label)}
         </p>
       </div>
 

@@ -1,9 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useLang } from "@/lib/i18n";
+import { tx } from "@/lib/translations";
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
+  const { lang, setLang, t } = useLang();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -19,6 +22,13 @@ export default function Navigation() {
 
   const textColor = scrolled ? "text-fg" : "text-fg-light";
   const hoverColor = "hover:text-accent";
+
+  const items = [
+    { label: t(tx.nav.work), id: "projects" },
+    { label: t(tx.nav.about), id: "about" },
+    { label: t(tx.nav.capabilities), id: "capabilities" },
+    { label: t(tx.nav.contact), id: "contact" },
+  ];
 
   return (
     <nav
@@ -36,21 +46,44 @@ export default function Navigation() {
           Kérian Wimbée
         </button>
 
-        <div className="hidden md:flex items-center gap-8">
-          {[
-            { label: "Work", id: "projects" },
-            { label: "About", id: "about" },
-            { label: "Capabilities", id: "capabilities" },
-            { label: "Contact", id: "contact" },
-          ].map((item) => (
-            <button
-              key={item.id}
-              onClick={() => scrollTo(item.id)}
-              className={`font-mono text-xs uppercase tracking-widest transition-colors ${textColor} ${hoverColor}`}
-            >
-              {item.label}
-            </button>
-          ))}
+        <div className="flex items-center gap-6 md:gap-8">
+          <div className="hidden md:flex items-center gap-8">
+            {items.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollTo(item.id)}
+                className={`font-mono text-xs uppercase tracking-widest transition-colors ${textColor} ${hoverColor}`}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+
+          <div
+            className={`flex items-center gap-1 font-mono text-[11px] uppercase tracking-widest border rounded-full px-1 py-1 transition-colors ${
+              scrolled ? "border-border" : "border-fg-light/30"
+            }`}
+            role="group"
+            aria-label="Language switcher"
+          >
+            {(["en", "fr"] as const).map((code) => {
+              const active = lang === code;
+              return (
+                <button
+                  key={code}
+                  onClick={() => setLang(code)}
+                  aria-pressed={active}
+                  className={`px-2.5 py-1 rounded-full transition-colors ${
+                    active
+                      ? "bg-accent text-bg-dark"
+                      : `${textColor} ${hoverColor}`
+                  }`}
+                >
+                  {code.toUpperCase()}
+                </button>
+              );
+            })}
+          </div>
         </div>
       </div>
     </nav>
