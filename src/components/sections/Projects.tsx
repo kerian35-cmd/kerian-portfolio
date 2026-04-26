@@ -94,7 +94,7 @@ const projects: Project[] = [
       "Developed and scaled catering and event offerings, increasing monthly high-value requests from 0–1 to ~10 consistently",
       "Launched and promoted 'La Carbonara Saleng' catering concept, generating 10+ events within 6 months",
       "Oversaw website optimization, SEO, content creation, and paid media campaigns",
-      "Built a clear, consistent content strategy across Instagram, Facebook, TikTok and LINE",
+      "Built a clear, consistent content strategy across Instagram, Facebook and LINE",
     ],
     results: [
       "+60% delivery platform growth",
@@ -111,6 +111,54 @@ const projects: Project[] = [
       "/elements/labottega_menu.png",
       "/elements/labottega_pic_valentines.png",
       "/elements/labottega_overlay_inline.jpg",
+    ],
+  },
+  {
+    id: "carbonara-saleng",
+    tag: "Concept Launch",
+    title: "La Carbonara Saleng",
+    role: "Marketing Manager — La Bottega",
+    period: "Q3 — Q4 2025",
+    location: "Bangkok, Thailand",
+    subtitle:
+      "Authentic Roman carbonara, served from a custom Thai saleng cart. 10+ events in under 6 months.",
+    image: "/elements/saleng_5.jpg",
+    overlayImage: "/elements/saleng_6.jpg",
+    summary:
+      "Contributed to the conception, branding and launch of La Bottega's mobile carbonara concept — an authentic Roman recipe served from a modern, custom-designed Thai saleng cart, bringing Italian street food to Bangkok's streets, embassies, schools and trendiest neighbourhoods. Worked alongside the founder and team across every step of the project.",
+    highlights: [
+      "Italian street food, Bangkok-style",
+      "Custom modern saleng cart, designed by the team",
+      "10+ events in under 6 months",
+    ],
+    responsibilities: [
+      "Participated in naming and brand positioning as authentic Italian street food native to Bangkok",
+      "Contributed to the design of the mobile cart — a modern reinterpretation of the traditional Thai saleng — alongside the founder and team",
+      "Developed the visual identity and on-cart communication: logo work, illustrations, signage, menu and graphics",
+      "Helped source and coordinate event collaborations with embassies, international schools, retailers and lifestyle venues",
+      "Ran event-by-event promotion across La Bottega's Instagram, Facebook and LINE channels",
+    ],
+    results: [
+      "10+ events in under 6 months",
+      "Italian Embassy of Thailand",
+      "Pattana International School",
+      "Songwat — Bangkok's trendiest neighbourhood",
+      "Italasia partnership",
+      "New mobile revenue stream launched from zero",
+    ],
+    links: [
+      {
+        label: "labottega.name/lacarbonarabangkok",
+        href: "https://www.labottega.name/lacarbonarabangkok",
+      },
+    ],
+    gallery: [
+      "/elements/lacarbonara_lady.png",
+      "/elements/saleng_1.jpg",
+      "/elements/saleng_2.jpg",
+      "/elements/lacarbonara_saleng_graph.png",
+      "/elements/saleng_3.jpg",
+      "/elements/saleng_4.jpg",
     ],
   },
   {
@@ -428,7 +476,10 @@ export default function Projects() {
                       "linear-gradient(to right, transparent, black 6%, black 94%, transparent)",
                   }}
                 >
-                  <div className="marquee-track marquee-track--slow gap-5 pr-5">
+                  <div
+                    className="marquee-track gap-5 pr-5"
+                    style={{ animationDuration: `${current.gallery.length * 6}s` }}
+                  >
                     {[...current.gallery, ...current.gallery].map((src, i) => (
                       <div
                         key={`${src}-${i}`}
