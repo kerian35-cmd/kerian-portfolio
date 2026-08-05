@@ -5,12 +5,12 @@ import "./globals.css";
 import { LanguageProvider } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-  title: "Kérian Wimbée — Marketing Specialist & AI Strategist",
+  title: "Kérian Wimbée | Marketing Strategist, F&B & Hospitality",
   description:
-    "Marketing Manager with 3+ years driving growth for premium F&B brands across Asia. Combining strategic marketing with AI-native execution.",
+    "Marketing Manager with 3+ years driving growth for premium F&B brands across Asia. Strategy first, AI when it helps.",
   metadataBase: new URL("https://kerian-portfolio.vercel.app"),
   openGraph: {
-    title: "Kérian Wimbée — Marketing Specialist & AI Strategist",
+    title: "Kérian Wimbée | Marketing Strategist, F&B & Hospitality",
     description:
       "Marketing Manager with 3+ years driving growth for premium F&B brands across Asia.",
     type: "website",

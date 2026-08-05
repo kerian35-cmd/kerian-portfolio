@@ -99,7 +99,7 @@ export default function Hero() {
 
           <button
             onClick={scrollToContact}
-            className="hero-cta self-start inline-flex items-center gap-3 bg-accent text-bg-dark px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-accent-2 transition-colors"
+            className="hero-cta self-start inline-flex items-center gap-3 bg-accent text-bg-dark px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-accent-2 transition-colors mb-10"
           >
             <span className="w-2 h-2 rounded-full bg-bg-dark" />
             {t(tx.hero.cta)}

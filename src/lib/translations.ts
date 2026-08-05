@@ -10,15 +10,15 @@ export const tx = {
 
   hero: {
     eyebrow: {
-      en: "Marketing Specialist & AI Strategist",
-      fr: "Spécialiste Marketing & Stratège IA",
+      en: "Marketing Strategist, F&B & Hospitality",
+      fr: "Stratège Marketing, F&B & Hôtellerie",
     },
     headlineLine1: { en: "Marketing", fr: "Un marketing" },
-    headlineLine2: { en: "that scales.", fr: "qui scale." },
-    headlineLine3: { en: "Powered by AI.", fr: "Boosté par l'IA." },
+    headlineLine2: { en: "that delivers.", fr: "qui livre." },
+    headlineLine3: { en: "With an AI edge.", fr: "Un atout IA." },
     sub: {
-      en: "3 years driving growth for premium F&B brands across Asia. From +40% sustained revenue growth to global top-25 rankings — I combine strategic marketing with AI-native execution.",
-      fr: "Trois ans à accélérer la croissance de marques F&B premium en Asie. De +40 % de CA soutenu à un top 25 mondial — stratégie marketing solide, exécution IA-first.",
+      en: "3+ years driving growth for premium F&B brands across Asia. +40% sustained revenue growth, global top-25 rankings, full-funnel marketing from A to Z. Strategy first, AI when it helps.",
+      fr: "Plus de 3 ans à faire grandir des marques F&B premium en Asie. +40 % de croissance soutenue, top 25 mondial, marketing full-funnel de A à Z. La stratégie d'abord, l'IA quand ça fait gagner du temps.",
     },
     cta: { en: "Get in touch", fr: "Me contacter" },
     metaLocation: { en: "Location", fr: "Localisation" },
@@ -32,19 +32,19 @@ export const tx = {
   },
 
   about: {
-    eyebrow: { en: "01 — About", fr: "01 — À propos" },
+    eyebrow: { en: "01 · About", fr: "01 · À propos" },
     title: { en: "About me.", fr: "À propos." },
     p1: {
       en: "I'm a Marketing Manager with 3 years of hands-on experience driving growth for premium F&B and hospitality brands in Asia. Proven track record in revenue growth, brand elevation at global level, and full-funnel digital marketing across paid media, SEO, PR, social, events, and delivery platforms.",
       fr: "Marketing Manager avec 3 ans d'expérience terrain à faire grandir des marques F&B et hôtelières premium en Asie. Résultats concrets sur la croissance du CA, le rayonnement de marque à l'international et le marketing digital full-funnel : média payant, SEO, RP, social, événementiel et plateformes de livraison.",
     },
     p2: {
-      en: "Based in Bangkok with full mobility across Asia. I work with international brands, limited budgets, and high-performance expectations — combining strategic thinking with operational execution. Multilingual, Asia-focused, and results-driven.",
-      fr: "Basé à Bangkok, mobile partout en Asie. Je travaille avec des marques internationales, des budgets serrés et des objectifs ambitieux — en combinant vision stratégique et exécution sur le terrain. Multilingue, focus Asie, orienté résultats.",
+      en: "3+ years of experience in Asian markets, open to opportunities worldwide. I work with international brands, limited budgets, and high-performance expectations, combining strategic thinking with operational execution.",
+      fr: "3+ ans d'expérience sur les marchés asiatiques, ouvert aux opportunités dans le monde entier. Je travaille avec des marques internationales, des budgets serrés et des objectifs ambitieux, en combinant vision stratégique et exécution sur le terrain.",
     },
     p3: {
-      en: "AI is a force multiplier in my workflow, not a replacement for expertise. Three years of hands-on marketing strategy, brand building, and growth execution stay in the driver's seat — I use AI to compress production time, stress-test ideas, and ship better work, faster. Every brief, decision, and narrative still goes through human analysis and judgment. Human-in-the-loop, always.",
-      fr: "L'IA, c'est un multiplicateur de force dans mon workflow, pas un substitut à l'expertise. Trois ans de stratégie marketing, de construction de marque et d'exécution growth restent aux commandes — j'utilise l'IA pour réduire les temps de production, stress-tester les idées et livrer mieux, plus vite. Chaque brief, chaque décision, chaque récit passe toujours par l'analyse et le jugement humain. Human-in-the-loop, toujours.",
+      en: "I lean on AI tools for content production, workflow automation, and rapid prototyping. It speeds things up. But every strategy, every decision, every piece of messaging still comes from real marketing experience and human judgment.",
+      fr: "Je m'appuie sur l'IA pour la production de contenu, l'automatisation de workflows et le prototypage rapide. Ça accélère. Mais chaque stratégie, chaque décision, chaque message repose sur une vraie expérience marketing et un jugement humain.",
     },
     tagline: {
       en: "Designed by marketers, for marketers.",
@@ -63,22 +63,22 @@ export const tx = {
       {
         value: "+40%",
         label: {
-          en: "Revenue Growth — Massilia (3Y)",
-          fr: "Croissance CA — Massilia (3 ans)",
+          en: "Revenue Growth, Massilia (3Y)",
+          fr: "Croissance CA, Massilia (3 ans)",
         },
       },
       {
         value: "+60%",
         label: {
-          en: "Delivery Growth — La Bottega",
-          fr: "Croissance livraison — La Bottega",
+          en: "Delivery Growth, La Bottega",
+          fr: "Croissance livraison, La Bottega",
         },
       },
       {
         value: "+45%",
         label: {
-          en: "Social Following — La Bottega",
-          fr: "Abonnés réseaux — La Bottega",
+          en: "Social Following, La Bottega",
+          fr: "Abonnés réseaux, La Bottega",
         },
       },
       {
@@ -90,11 +90,11 @@ export const tx = {
       },
       {
         value: "#22",
-        label: { en: "Worldwide — 50 Top Pizza", fr: "Mondial — 50 Top Pizza" },
+        label: { en: "Worldwide, 50 Top Pizza", fr: "Mondial, 50 Top Pizza" },
       },
       {
         value: "#4",
-        label: { en: "APAC — 50 Top Pizza", fr: "APAC — 50 Top Pizza" },
+        label: { en: "APAC, 50 Top Pizza", fr: "APAC, 50 Top Pizza" },
       },
       {
         value: "30+",
@@ -119,7 +119,7 @@ export const tx = {
   },
 
   skills: {
-    eyebrow: { en: "03 — Capabilities", fr: "03 — Compétences" },
+    eyebrow: { en: "03 · Capabilities", fr: "03 · Compétences" },
     title: { en: "What I do.", fr: "Ce que je fais." },
     groups: [
       {
@@ -145,7 +145,7 @@ export const tx = {
         ],
       },
       {
-        title: { en: "AI & Automation", fr: "IA & Automatisation" },
+        title: { en: "AI & Production", fr: "IA & Production" },
         skills: [
           { en: "AI Generative Video", fr: "Vidéo générative IA" },
           { en: "AI Generative Image", fr: "Image générative IA" },
@@ -218,7 +218,7 @@ export const tx = {
   },
 
   projects: {
-    eyebrow: { en: "02 — Selected Work", fr: "02 — Sélection de projets" },
+    eyebrow: { en: "02 · Selected Work", fr: "02 · Sélection de projets" },
     title: { en: "Projects.", fr: "Projets." },
     swipe: { en: "Swipe", fr: "Glisser" },
     someOfMyWork: { en: "Some of my work", fr: "Quelques exemples" },
@@ -231,13 +231,13 @@ export const tx = {
     nextAria: { en: "Next project", fr: "Projet suivant" },
     closeAria: { en: "Close project details", fr: "Fermer les détails du projet" },
     dialogAriaSuffix: {
-      en: "— project details",
-      fr: "— détails du projet",
+      en: ", project details",
+      fr: ", détails du projet",
     },
   },
 
   contact: {
-    eyebrow: { en: "05 — Contact", fr: "05 — Contact" },
+    eyebrow: { en: "05 · Contact", fr: "05 · Contact" },
     headlineLine1: { en: "Let's build", fr: "Construisons" },
     headlineLine2: { en: "something", fr: "quelque chose" },
     headlineLine3: { en: "remarkable.", fr: "de remarquable." },
@@ -251,8 +251,8 @@ export const tx = {
   footer: {
     backToTop: { en: "Back to top", fr: "Retour en haut" },
     builtWith: {
-      en: "Built with Next.js, Tailwind, GSAP & AI.",
-      fr: "Réalisé avec Next.js, Tailwind, GSAP & IA.",
+      en: "Built with Next.js, Tailwind, GSAP & a bit of AI.",
+      fr: "Réalisé avec Next.js, Tailwind, GSAP & un peu d'IA.",
     },
   },
 } satisfies Record<string, unknown>;
@@ -290,8 +290,8 @@ export const projectsData: LocalizedProject[] = [
       fr: "Marketing Manager (Temps plein)",
     },
     period: {
-      en: "September 2023 — June 2026",
-      fr: "Septembre 2023 — Juin 2026",
+      en: "September 2023 to June 2026",
+      fr: "Septembre 2023 à Juin 2026",
     },
     location: { en: "Bangkok, Thailand", fr: "Bangkok, Thaïlande" },
     subtitle: {
@@ -302,15 +302,15 @@ export const projectsData: LocalizedProject[] = [
     overlayImage: "/elements/massilia_overlay_hero.jpg",
     summary: {
       en: "Led end-to-end marketing strategy and execution for a high-volume, multi-location premium pizzeria, managing brand, digital performance, PR, events, and delivery platforms with full ownership and minimal budget.",
-      fr: "Pilotage end-to-end de la stratégie marketing d'une pizzeria premium multi-sites à fort volume — marque, performance digitale, RP, événementiel et plateformes de livraison. Ownership pleine et entière, budget minimal.",
+      fr: "Pilotage end-to-end de la stratégie marketing d'une pizzeria premium multi-sites à fort volume. Marque, performance digitale, RP, événementiel et plateformes de livraison. Ownership pleine et entière, budget minimal.",
     },
     highlights: [
       {
-        en: "Multi-Awarded Italian Restaurant — Bangkok",
-        fr: "Restaurant italien multi-récompensé — Bangkok",
+        en: "Multi-Awarded Italian Restaurant, Bangkok",
+        fr: "Restaurant italien multi-récompensé, Bangkok",
       },
       {
-        en: "Best Pizzeria in Thailand — sustained since 2021",
+        en: "Best Pizzeria in Thailand, sustained since 2021",
         fr: "Meilleure pizzeria de Thaïlande depuis 2021",
       },
       {
@@ -355,7 +355,7 @@ export const projectsData: LocalizedProject[] = [
       },
       { en: "#4 APAC ranking (from #9)", fr: "4ᵉ APAC (parti de la 9ᵉ)" },
       {
-        en: "Best Pizza Thailand — sustained since 2021",
+        en: "Best Pizza Thailand, sustained since 2021",
         fr: "Meilleure pizza de Thaïlande depuis 2021",
       },
       {
@@ -387,8 +387,8 @@ export const projectsData: LocalizedProject[] = [
       fr: "Marketing Manager (Temps plein)",
     },
     period: {
-      en: "September 2023 — June 2026",
-      fr: "Septembre 2023 — Juin 2026",
+      en: "September 2023 to June 2026",
+      fr: "Septembre 2023 à Juin 2026",
     },
     location: { en: "Bangkok, Thailand", fr: "Bangkok, Thaïlande" },
     subtitle: {
@@ -399,12 +399,12 @@ export const projectsData: LocalizedProject[] = [
     overlayImage: "/elements/labottega_overlay_hero.jpg",
     summary: {
       en: "Affirmed the brand identity of an upscale Italian restaurant as 'Your Neighbourhood Italian Spot in Tonglo', building brand clarity, new revenue streams, and digital performance.",
-      fr: "Affirmation de l'identité d'un restaurant italien haut de gamme — « Your Neighbourhood Italian Spot in Tonglo » — pour gagner en clarté, ouvrir de nouveaux flux de revenus et performer en digital.",
+      fr: "Affirmation de l'identité d'un restaurant italien haut de gamme, « Your Neighbourhood Italian Spot in Tonglo », pour gagner en clarté, ouvrir de nouveaux flux de revenus et performer en digital.",
     },
     highlights: [
       {
-        en: "Upscale Italian restaurant — Bangkok",
-        fr: "Restaurant italien haut de gamme — Bangkok",
+        en: "Upscale Italian restaurant, Bangkok",
+        fr: "Restaurant italien haut de gamme, Bangkok",
       },
       {
         en: "Brand identity affirmed: 'Your Neighbourhood Italian Spot in Tonglo'",
@@ -422,11 +422,11 @@ export const projectsData: LocalizedProject[] = [
       },
       {
         en: "Developed and scaled catering and event offerings, increasing monthly high-value requests from 0–1 to ~10 consistently",
-        fr: "Développement et scaling de l'offre catering & événementielle — passage de 0–1 à environ 10 demandes premium par mois, de manière constante",
+        fr: "Développement et scaling de l'offre catering & événementielle. Passage de 0-1 à environ 10 demandes premium par mois, de manière constante.",
       },
       {
         en: "Launched and promoted 'La Carbonara Saleng' catering concept, generating 10+ events within 6 months",
-        fr: "Lancement et promotion du concept catering « La Carbonara Saleng » — plus de 10 événements en 6 mois",
+        fr: "Lancement et promotion du concept catering « La Carbonara Saleng ». Plus de 10 événements en 6 mois.",
       },
       {
         en: "Oversaw website optimization, SEO, content creation, and paid media campaigns",
@@ -474,10 +474,10 @@ export const projectsData: LocalizedProject[] = [
     tag: { en: "Concept Launch", fr: "Lancement de concept" },
     title: "La Carbonara Saleng",
     role: {
-      en: "Marketing Manager — La Bottega",
-      fr: "Marketing Manager — La Bottega",
+      en: "Marketing Manager, La Bottega",
+      fr: "Marketing Manager, La Bottega",
     },
-    period: { en: "Q3 — Q4 2025", fr: "T3 — T4 2025" },
+    period: { en: "Q3 to Q4 2025", fr: "T3 à T4 2025" },
     location: { en: "Bangkok, Thailand", fr: "Bangkok, Thaïlande" },
     subtitle: {
       en: "Authentic Roman carbonara, served from a custom Thai saleng cart. 10+ events in under 6 months.",
@@ -486,8 +486,8 @@ export const projectsData: LocalizedProject[] = [
     image: "/elements/saleng_5.jpg",
     overlayImage: "/elements/saleng_6.jpg",
     summary: {
-      en: "Contributed to the conception, branding and launch of La Bottega's mobile carbonara concept — an authentic Roman recipe served from a modern, custom-designed Thai saleng cart, bringing Italian street food to Bangkok's streets, embassies, schools and trendiest neighbourhoods. Worked alongside the founder and team across every step of the project.",
-      fr: "Participation à la conception, au branding et au lancement du concept mobile carbonara de La Bottega — une recette romaine authentique servie depuis un saleng thaï moderne et sur mesure, pour faire entrer la street food italienne dans les rues, ambassades, écoles et quartiers les plus tendance de Bangkok. Aux côtés du fondateur et de l'équipe, à chaque étape du projet.",
+      en: "Contributed to the conception, branding and launch of La Bottega's mobile carbonara concept. An authentic Roman recipe served from a modern, custom-designed Thai saleng cart, bringing Italian street food to Bangkok's streets, embassies, schools and trendiest neighbourhoods. Worked alongside the founder and team across every step of the project.",
+      fr: "Participation à la conception, au branding et au lancement du concept mobile carbonara de La Bottega. Une recette romaine authentique servie depuis un saleng thaï moderne et sur mesure, pour faire entrer la street food italienne dans les rues, ambassades, écoles et quartiers les plus tendance de Bangkok. Aux côtés du fondateur et de l'équipe, à chaque étape du projet.",
     },
     highlights: [
       {
@@ -509,8 +509,8 @@ export const projectsData: LocalizedProject[] = [
         fr: "Participation au naming et au positionnement de marque, pensé comme une street food italienne native de Bangkok",
       },
       {
-        en: "Contributed to the design of the mobile cart — a modern reinterpretation of the traditional Thai saleng — alongside the founder and team",
-        fr: "Participation au design du saleng — une réinterprétation moderne du chariot thaï traditionnel — aux côtés du fondateur et de l'équipe",
+        en: "Contributed to the design of the mobile cart, a modern reinterpretation of the traditional Thai saleng, alongside the founder and team",
+        fr: "Participation au design du saleng, une réinterprétation moderne du chariot thaï traditionnel, aux côtés du fondateur et de l'équipe",
       },
       {
         en: "Developed the visual identity and on-cart communication: logo work, illustrations, signage, menu and graphics",
@@ -539,8 +539,8 @@ export const projectsData: LocalizedProject[] = [
         fr: "Pattana International School",
       },
       {
-        en: "Songwat — Bangkok's trendiest neighbourhood",
-        fr: "Songwat — quartier le plus tendance de Bangkok",
+        en: "Songwat, Bangkok's trendiest neighbourhood",
+        fr: "Songwat, quartier le plus tendance de Bangkok",
       },
       { en: "Italasia partnership", fr: "Partenariat Italasia" },
       {
@@ -565,7 +565,7 @@ export const projectsData: LocalizedProject[] = [
   },
   {
     id: "artisan",
-    tag: { en: "AI Video", fr: "Vidéo IA" },
+    tag: { en: "Brand Film", fr: "Film de marque" },
     title: "Artisan Baker",
     role: {
       en: "Creative Direction & AI Production",
@@ -581,8 +581,8 @@ export const projectsData: LocalizedProject[] = [
     overlayImage: "/elements/artisan_overlay_hero.jpg",
     video: "/elements/artisanbaker_video.webm",
     summary: {
-      en: "Produced a 30-second brand film for Artisan Bakers Co., Ltd. using entirely AI-generated visuals. Visual aesthetic modeled after Terrence Malick's Days of Heaven — Kodak Vision3 500T, golden amber highlights, 35mm grain. Hands and silhouettes only. 'Designed by chefs, for chefs.'",
-      fr: "Production d'un film de marque de 30 secondes pour Artisan Bakers Co., Ltd., 100 % en visuels IA. Esthétique inspirée de Days of Heaven (Terrence Malick) — Kodak Vision3 500T, hautes lumières ambrées, grain 35mm. Mains et silhouettes uniquement. « Designed by chefs, for chefs. »",
+      en: "Produced a 30-second brand film for Artisan Bakers Co., Ltd. using entirely AI-generated visuals. Visual aesthetic modeled after Terrence Malick's Days of Heaven. Kodak Vision3 500T, golden amber highlights, 35mm grain. Hands and silhouettes only. 'Designed by chefs, for chefs.'",
+      fr: "Production d'un film de marque de 30 secondes pour Artisan Bakers Co., Ltd., 100 % en visuels IA. Esthétique inspirée de Days of Heaven (Terrence Malick). Kodak Vision3 500T, hautes lumières ambrées, grain 35mm. Mains et silhouettes uniquement. « Designed by chefs, for chefs. »",
     },
     highlights: [
       { en: "100% AI-generated brand film", fr: "Film de marque 100 % IA" },
